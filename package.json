@@ -1,0 +1,41 @@
+{
+	"name": "trongthanh",
+	"version": "1.0.1",
+	"description": "A personal card for Tran Trong Thanh (@trongthanh)",
+	"main": "bin/card.js",
+	"bin": {
+		"trongthanh": "./bin/card.js"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/trongthanh/npx-card.git"
+	},
+	"scripts": {
+		"prepublish": "npm run build",
+		"build": "node build.js",
+		"dev": "npm run build && node ./bin/card.js",
+		"lint": "eslint",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"card",
+		"npm",
+		"npm card",
+		"npx",
+		"npx card",
+		"business card",
+		"trongthanh"
+	],
+	"author": "Thanh Tran <trongthanh@gmail.com> (https://int3ractive.com)",
+	"license": "MIT",
+	"files": [
+		"bin/card.js",
+		"build.js",
+		"LICENSE"
+	],
+	"devDependencies": {
+		"boxen": "^2.1.0",
+		"chalk": "^2.4.1",
+		"standard": "^12.0.1"
+	}
+}
