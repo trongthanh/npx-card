@@ -74,7 +74,6 @@ Pods
 *.class
 
 # generated files
-bin/
 gen/
 
 # Ignore gradle files
