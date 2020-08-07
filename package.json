@@ -1,7 +1,7 @@
 {
 	"name": "trongthanh",
-	"version": "1.0.1",
-	"description": "A personal card for Tran Trong Thanh (@trongthanh)",
+	"version": "1.0.2",
+	"description": "A personal npx card for Tran Trong Thanh (@trongthanh)",
 	"main": "bin/card.js",
 	"bin": {
 		"trongthanh": "./bin/card.js"
@@ -11,10 +11,10 @@
 		"url": "https://github.com/trongthanh/npx-card.git"
 	},
 	"scripts": {
-		"prepublish": "npm run build",
+		"prepublishOnly": "npm run build",
 		"build": "node build.js",
 		"dev": "npm run build && node ./bin/card.js",
-		"lint": "eslint",
+		"lint": "eslint ./build.js",
 		"test": "echo \"Error: no test specified\" && exit 1"
 	},
 	"keywords": [
@@ -30,12 +30,10 @@
 	"license": "MIT",
 	"files": [
 		"bin/card.js",
-		"build.js",
 		"LICENSE"
 	],
 	"devDependencies": {
-		"boxen": "^2.1.0",
-		"chalk": "^2.4.1",
-		"standard": "^12.0.1"
+		"boxen": "^4.2.0",
+		"chalk": "^4.1.0"
 	}
 }

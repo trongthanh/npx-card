@@ -1,3 +1,4 @@
+/* eslint-env node */
 'use strict';
 
 // Pull in our modules
@@ -16,9 +17,9 @@ const options = {
 // Text + chalk definitions
 // prettier-ignore
 const data = {
-	name:            chalk.white('           Tran Trong Thanh'),
+	name:            chalk.white('           TRAN Trong Thanh'),
 	handle:          chalk.white('trongthanh'),
-	work:            chalk.white('Front-End Architect / JavaScript Developer'),
+	work:            chalk.white('Principal Web Engineer @ Chotot.com'),
 	from:            chalk.white('Ho Chi Minh city, Vietnam'),
 	twitter:         chalk.gray('https://twitter.com/') + chalk.cyan('trongthanh'),
 	npm:             chalk.gray('https://npmjs.com/') + chalk.red('~trongthanh'),
